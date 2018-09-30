@@ -1,7 +1,14 @@
 package Project;
 
-public enum ItemType {
+/**
+ * Name: Daniel
+ * Description: Enum called ItemType
+ * Date: 9/29/18
+ * Citations: Oracal ilearning
+ */
 
+public enum ItemType {
+  // Enum types
   AUDIO ("AU"),
   VISUAL("VI"),
   AUDIOMOBILE("AM"),
