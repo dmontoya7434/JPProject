@@ -1,6 +1,7 @@
+package Project;
 /**
  * Name: Daniel
- * Description: interface that is called Item and includes functions
+ * Description: interface that is called Project.Item and includes functions
  * Date: 9/29/18
  * Citations: Oracal ilearning
  */

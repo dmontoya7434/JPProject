@@ -1,4 +1,4 @@
-
+package Project;
 
 /**
  * Daniel Montoya
@@ -11,10 +11,10 @@ public class Main {
   public static void main(String args[]) {
 
 
-    // creates a new object class for Widget
-    Widget w1 = new Widget("Widget 1");
+    // creates a new object class for Project.Widget
+    Widget w1 = new Widget("Project.Widget 1");
     System.out.println(w1.toString());
-    Widget w2 = new Widget("Widget 2");
+    Widget w2 = new Widget("Project.Widget 2");
     System.out.println(w2.toString());
 
     for (ItemType it: ItemType.values()) {

@@ -1,16 +1,19 @@
+package Project;
+
 /**
  * Daniel Montoya
  * Date: 9/29/18
- * Description: Create an abrstract class called Product that will implement the Item interface
+ * Description: Create an abrstract class called Project.Product that will implement the Project.Item interface
  * Citations: Oracal ilearning
  */
 
+import Project.Item;
 import java.util.Date;
 
-// abstract class called Product that implements Item
+// abstract class called Project.Product that implements Project.Item
 public abstract class Product implements Item {
 
-  //Fields to Product
+  //Fields to Project.Product
   private int serialNumber;
   private String Manufacturer;
   private Date manufacturerOn;
@@ -36,7 +39,7 @@ public abstract class Product implements Item {
   public void setProductionNumber(int number) {
     number = number;
   }
-  //Methods from the interface Item
+  //Methods from the interface Project.Item
   public void setName(String name) {
 
   }
@@ -62,7 +65,7 @@ public abstract class Product implements Item {
     return "Manufacturer  : OraclProductionSerial\n"
         + "Number         : 1\n"
         + "Date           : Thu May 14 15:18:43 BST 2015\n"
-        + "Name           : Product Name\n";
+        + "Name           : Project.Product Name\n";
   }
 
 
