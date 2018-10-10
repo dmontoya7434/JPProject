@@ -12,7 +12,7 @@ import java.util.Date;
 public interface Item {
 
   //constant called manufacturer that would be set to "OracleProduction
-  public static final String MANUFACTURER = "OracleProduction";
+  public static final String manufacturer= "OracleProduction";
 
   //method setProductionNumber that takes one integer parameter
   void setProductionNumber(int number);

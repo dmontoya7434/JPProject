@@ -17,6 +17,7 @@ public enum ItemType {
   private final String code;
 
   ItemType(String code) {
+
     this.code = code;
   }
 

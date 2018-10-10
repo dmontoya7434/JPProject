@@ -15,57 +15,61 @@ public abstract class Product implements Item {
 
   //Fields to Project.Product
   private int serialNumber;
-  private String Manufacturer;
-  private Date manufacturerOn;
+  private String manufacturer = Item.manufacturer;
+  private Date manufactureredOn;
   private String name;
 
-  private int currentProductNumber;
+  private static int currentProductNumber = 1; //static
 
   //Constructor that will take the name of the product and
   //set it to the field name variable.
-  public Product(String n) {
 
-    name = n;
+  public Product(String name) {
+
+    this.name = name;
 
     //Assigned a serial number from the currentProductNumber and increments
     //currentProductNumber
     serialNumber = currentProductNumber++;
 
     //Sets the current Date
-    manufacturerOn = new Date();
+    manufactureredOn = new Date();
+
+    //manufacturer = Item.manufacturer;
   }
 
   //Stores the next number to be assiggned to serialNumber
   public void setProductionNumber(int number) {
-    number = number;
+    currentProductNumber = number;
   }
   //Methods from the interface Project.Item
   public void setName(String name) {
+    this.name = name;
 
   }
 
   public String getName() {
 
-    return name;
+    return this.name;
 
   }
 
   public Date getManufactureDate(Date date) {
 
-    return manufacturerOn;
+    return this.manufactureredOn;
   }
 
   public int getSerialNumber() {
-    return serialNumber;
+    return this.serialNumber;
 
   }
 
   //ToString method
   public String toString() {
-    return "Manufacturer  : OraclProductionSerial\n"
-        + "Number         : 1\n"
-        + "Date           : Thu May 14 15:18:43 BST 2015\n"
-        + "Name           : Project.Product Name\n";
+    return "Manufacturer   :" + manufacturer + "\n"
+        + "Serial Number  :" + serialNumber + "\n"
+        + "Date           :" + manufactureredOn + "\n"
+        + "Name           :" + name + "\n";
   }
 
 
