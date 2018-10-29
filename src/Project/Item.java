@@ -9,6 +9,8 @@ package Project;
 //java class that shows the date
 import java.util.Date;
 
+// Step 1: Create an interface called Item
+
 public interface Item {
 
   //constant called manufacturer that would be set to "OracleProduction

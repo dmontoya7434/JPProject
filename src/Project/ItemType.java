@@ -7,6 +7,7 @@ package Project;
  * Citations: Oracal ilearning
  */
 
+//Step 2: Create an enum called ItemType
 public enum ItemType {
   // Enum types
   AUDIO ("AU"),
@@ -14,7 +15,7 @@ public enum ItemType {
   AUDIOMOBILE("AM"),
   VISUALMOBILE("VM");
 
-  private final String code;
+  public final String code;
 
   ItemType(String code) {
 

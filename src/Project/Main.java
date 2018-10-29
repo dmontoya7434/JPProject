@@ -12,10 +12,15 @@ public class Main {
 
 
     // creates a new object class for Project.Widget
-    Widget w1 = new Widget("Project.Widget 1");
+    Widget w1 = new Widget("Widget 1");
     System.out.println(w1.toString());
-    Widget w2 = new Widget("Project.Widget 2");
+    Widget w2 = new Widget("Widget 2");
     System.out.println(w2.toString());
+
+    for (ItemType it: ItemType.values()) {
+      System.out.println(it + " " + it.getcode());
+    }
+
 
     // Create a driver class for AudioPlayer that will test to see
     // wheater we can instantiate occurrences of it, use the media
@@ -35,13 +40,6 @@ public class Main {
     MoviePlayer mymovie = new MoviePlayer("mymovie");
     System.out.println(mymovie);
     System.out.println();
-
-
-
-    for (ItemType it: ItemType.values()) {
-      System.out.println(it + " " + it.getcode());
-    }
-
 
   }
 

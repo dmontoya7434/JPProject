@@ -7,7 +7,7 @@ package Project;
  * Citations: Oracal ilearning
  */
 
-import Project.Item;
+
 import java.util.Date;
 
 // abstract class called Project.Product that implements Project.Item
