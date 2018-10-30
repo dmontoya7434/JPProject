@@ -1,6 +1,10 @@
 package Project;
 
+// Step 5: Create a class called AudioPlayer that is a subclass
+//         of Product and implements MultimediaControl interface
 public class AudioPlayer extends Product implements MultimediaControl {
+
+  // fields
 
   String audioSpecification;
   ItemType mediaType;

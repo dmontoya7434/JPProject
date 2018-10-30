@@ -1,5 +1,7 @@
 package Project;
 
+// Step 9: Create a class called Screen that implements ScreenSpec
+//         with 3 fields.
 public class Screen implements ScreenSpec {
 
   String resolution;
