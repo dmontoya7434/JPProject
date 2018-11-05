@@ -11,7 +11,7 @@ package Project;
 public class Widget extends Product {
 
     public Widget(String name) {
-      super(name);
+        super(name);
     }
-  }
+}
 

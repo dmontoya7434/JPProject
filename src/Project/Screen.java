@@ -1,5 +1,10 @@
 package Project;
 
+/**
+ * Name: Daniel Description: Enum called ItemType.
+ * Date: 9/29/18 Citations: Oracal ilearning.
+ */
+
 // Step 9: Create a class called Screen that implements ScreenSpec
 //         with 3 fields.
 public class Screen implements ScreenSpec {
@@ -25,8 +30,8 @@ public class Screen implements ScreenSpec {
 
   @Override
   public String toString() {
-    return "Resolution  : " + resolution + "\n" +
-        "Refresh Rate   : " + refreshrate + "\n" +
-        "Response Time  : " + responsetime;
+    return "Resolution  : " + resolution + "\n"
+        + "Refresh Rate   : " + refreshrate + "\n"
+        + "Response Time  : " + responsetime;
   }
 }

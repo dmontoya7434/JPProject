@@ -1,14 +1,11 @@
 package Project;
 
-/**
- * Daniel Montoya
- * Date: 9/29/18
- * Description: Create an abrstract class called Project.Product that will implement the Project.Item interface
- * Citations: Oracal ilearning
- */
-
-
 import java.util.Date;
+
+/**
+ * Daniel Montoya Date: 9/29/18 Description: Create an abstract class called Project.Product that
+ * will implement the Project.Item interface Citations: Oracal ilearning.
+ */
 
 // abstract class called Project.Product that implements Project.Item
 public abstract class Product implements Item {
@@ -24,6 +21,10 @@ public abstract class Product implements Item {
   //Constructor that will take the name of the product and
   //set it to the field name variable.
 
+  /**
+   *
+   * @param name String parameter for the constructor class.
+   */
   public Product(String name) {
 
     this.name = name;
@@ -38,16 +39,21 @@ public abstract class Product implements Item {
     //manufacturer = Item.manufacturer;
   }
 
-  //Stores the next number to be assiggned to serialNumber
+  //Stores the next number to be assigned to serialNumber
   public void setProductionNumber(int number) {
     currentProductNumber = number;
   }
+
   //Methods from the interface Project.Item
   public void setName(String name) {
     this.name = name;
 
   }
 
+  /**
+   *
+   * @return the name.
+   */
   public String getName() {
 
     return this.name;
@@ -59,12 +65,18 @@ public abstract class Product implements Item {
     return this.manufactureredOn;
   }
 
+  /**
+   *
+   * @return the serial Number.
+   */
   public int getSerialNumber() {
     return this.serialNumber;
-
   }
 
-  //ToString method
+  /**
+   *
+   * @return the tostring().
+   */
   public String toString() {
     return "Manufacturer   :" + manufacturer + "\n"
         + "Serial Number  :" + serialNumber + "\n"

@@ -1,7 +1,5 @@
 package Project;
 
-import java.util.ArrayList;
-
 /**
  * Daniel Montoya
  * Date: 9/29/18
@@ -44,6 +42,7 @@ public class Main {
     System.out.println(myscreen);
     System.out.println();
 
+    //Step 12: Create a driver class for movie player
     MoviePlayer mymovie = new MoviePlayer("mymovie");
     System.out.println(mymovie);
     System.out.println();

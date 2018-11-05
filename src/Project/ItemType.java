@@ -1,16 +1,13 @@
 package Project;
 
 /**
- * Name: Daniel
- * Description: Enum called ItemType
- * Date: 9/29/18
- * Citations: Oracal ilearning
+ * Name: Daniel Description: Enum called ItemType Date: 9/29/18 Citations: Oracal ilearning.
  */
 
 //Step 2: Create an enum called ItemType
 public enum ItemType {
   // Enum types
-  AUDIO ("AU"),
+  AUDIO("AU"),
   VISUAL("VI"),
   AUDIOMOBILE("AM"),
   VISUALMOBILE("VM");
@@ -21,7 +18,6 @@ public enum ItemType {
 
     this.code = code;
   }
-
 
 
   public String getcode() {

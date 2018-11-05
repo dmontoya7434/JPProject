@@ -1,7 +1,15 @@
 package Project;
 
+/**
+ * Name: Daniel Description: Enum called ItemType.
+ * Date: 9/29/18 Citations: Oracal ilearning.
+ */
+
+//Step 11: Create a class called MoviePlayer that extends Product and
+//         implements MultimediaControl.
 public class MoviePlayer extends Product implements MultimediaControl {
 
+  // add 2 fields with appropriate type
   String screen;
   ItemType monitortype;
 
@@ -35,7 +43,7 @@ public class MoviePlayer extends Product implements MultimediaControl {
 
   @Override
   public String toString() {
-    return "Screen      : " + screen + "\n" +
-        "Monitor type   : " + monitortype;
+    return "Screen      : " + screen + "\n"
+        + "Monitor type   : " + monitortype;
   }
 }
