@@ -23,7 +23,7 @@ SceneBuilder
 Daniel Montoya
 
 # License
-
+MIT is the license that is being used in this project.
 
 # Acknowledgments
 Web sites utilized
