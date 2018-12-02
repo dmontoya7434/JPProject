@@ -12,6 +12,12 @@ public class Screen implements ScreenSpec {
   private int refreshrate;
   private int responsetime;
 
+  /**
+   *
+   * @param resolution the resolution of the screen being passed.
+   * @param refreshrate the refresh rate of the screen being passed.
+   * @param responsetime the response time of the screen being passed.
+   */
   Screen(String resolution, int refreshrate, int responsetime) {
     this.resolution = resolution;
     this.refreshrate = refreshrate;

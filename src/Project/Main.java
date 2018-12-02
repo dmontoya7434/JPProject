@@ -13,10 +13,12 @@ public class Main {
 
   public static void main(String args[]) {
 
+    //JPP 06
     //testProduct();
     //AudioPlayerDriver.testAudioPlayer();
     //MoviePlayerDriver.testMoviePlayer();
 
+    // JPP 13
     //MoviePlayerDriver.testMoviePlayer();
     //PlayerDriver.testPlayer();
 
@@ -54,6 +56,7 @@ public class Main {
     }
   }
 
+  //JPP 06
   public static void testProduct() {
     Widget w1 = new Widget("Widget 1");
     System.out.println(w1.toString());

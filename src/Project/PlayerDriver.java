@@ -2,6 +2,7 @@ package Project;
 
 public class PlayerDriver {
 
+
   public static void testPlayer() {
     MoviePlayer mymovie = new MoviePlayer("DBPOWER MK101", new Screen("720x480", 40, 22),
         MonitorType.LCD);

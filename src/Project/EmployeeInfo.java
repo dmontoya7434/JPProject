@@ -1,16 +1,17 @@
 package Project;
-
 import java.util.Scanner;
 
 /**
- * Name: Daniel Description: Enum called ItemType Date: 9/29/18 Citations: Oracal ilearning
+ * Name: Daniel Description: Enum called ItemType
+ * Date: 9/29/18 Citations: Oracal ilearning
  */
 
 public class EmployeeInfo {
 
+  //Fields
   private StringBuilder name;
   private String code;
-
+  // Constructor
   public EmployeeInfo() {
     setName();
   }

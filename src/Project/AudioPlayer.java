@@ -1,9 +1,8 @@
 package Project;
 
-import java.util.Date;
-
 /**
- * Name: Daniel Description: Enum called ItemType Date: 9/29/18 Citations: Oracal ilearning.
+ * Name: Daniel Description: Enum called ItemType
+ * Date: 9/29/18 Citations: Oracal ilearning.
  */
 
 // Step 5: Create a class called AudioPlayer that is a subclass
@@ -11,7 +10,6 @@ import java.util.Date;
 public class AudioPlayer extends Product implements MultimediaControl {
 
   // fields
-
   private String audioSpecification;
   private ItemType mediaType = ItemType.AUDIO;
 
@@ -53,6 +51,7 @@ public class AudioPlayer extends Product implements MultimediaControl {
 
   }
 
+  // Create a toString that will display the superclasses toString method
   @Override
   public String toString() {
     return super.toString() + "\n" + "Audio Spec:" + audioSpecification + "\n"

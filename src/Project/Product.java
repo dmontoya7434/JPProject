@@ -17,7 +17,10 @@ abstract class Product implements Item , Comparable<Product> {
   private Date manufactureredOn;
   private static Integer currentProductNumber = 1;
 
-
+  /**
+   *
+   * @param name parameter
+   */
   Product(String name) {
 
     this.name = name;
