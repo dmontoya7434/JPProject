@@ -8,7 +8,7 @@ import java.util.Date;
  */
 
 // abstract class called Project.Product that implements Project.Item
-abstract class Product implements Item {
+abstract class Product implements Item , Comparable<Product> {
 
   //Fields to Project.Product
   private String name;
@@ -64,5 +64,9 @@ abstract class Product implements Item {
         + "Serial Number:" + serialNumber + "\n"
         + "Date:" + manufactureredOn + "\n"
         + "Name:" + name;
+  }
+
+  public int compareTo(Product c) {
+    return name.compareTo(c.getName());
   }
 }

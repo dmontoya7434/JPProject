@@ -21,13 +21,13 @@ public class Main {
     //PlayerDriver.testPlayer();
 
     //JP Project 16
-//    ArrayList<Product> productsArrayList;
-//    productsArrayList = testCollection();
-//    Collections.sort(productsArrayList);
-//    print(productsArrayList);
+    ArrayList<Product> productsArrayList;
+    productsArrayList = testCollection();
+    Collections.sort(productsArrayList);
+    print(productsArrayList);
   }
 
-  public static ArrayList<Product> testCollection() {
+  private static ArrayList<Product> testCollection() {
 
     AudioPlayer a1 = new AudioPlayer("iPod Mini","MP3");
     AudioPlayer a2 = new AudioPlayer("Walkman","WAV ");
@@ -37,7 +37,7 @@ public class Main {
         new Screen("1366x768", 40, 22), MonitorType.LED);
 
     // Write one line of code here to create the collection
-    ArrayList<Product> products = new ArrayList<Product>();
+    ArrayList<Product> products = new ArrayList<>();
 
     products.add(a1);
     products.add(a2);
