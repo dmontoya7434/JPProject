@@ -9,8 +9,8 @@ public enum ItemType {
   // Enum types
   AUDIO("AU"),
   VISUAL("VI"),
-  AUDIOMOBILE("AM"),
-  VISUALMOBILE("VM");
+  AUDIO_MOBILE("AM"),
+  VISUAL_MOBILE("VM");
 
   public final String code;
 

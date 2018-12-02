@@ -1,52 +1,82 @@
 package Project;
 
+import static jdk.nashorn.internal.objects.Global.print;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
 /**
- * Daniel Montoya
- * Date: 9/29/18
- * Citations: Oracal ilearning
+ * Daniel Montoya Date: 9/29/18 Citations: Oracal ilearning
  */
 
 public class Main {
 
   public static void main(String args[]) {
 
+    //testProduct();
+    //AudioPlayerDriver.testAudioPlayer();
+    //MoviePlayerDriver.testMoviePlayer();
 
+    //MoviePlayerDriver.testMoviePlayer();
+    //PlayerDriver.testPlayer();
 
-    // creates a new object class for Project.Widget
+    //JP Project 16
+//    ArrayList<Product> productsArrayList;
+//    productsArrayList = testCollection();
+//    Collections.sort(productsArrayList);
+//    print(productsArrayList);
+  }
+
+  public static ArrayList<Product> testCollection() {
+
+    AudioPlayer a1 = new AudioPlayer("iPod Mini","MP3");
+    AudioPlayer a2 = new AudioPlayer("Walkman","WAV ");
+    MoviePlayer m1 = new MoviePlayer("DBPOWER MK101",
+        new Screen("720x480", 40, 22), MonitorType.LCD);
+    MoviePlayer m2 = new MoviePlayer("Pyle PDV156BK",
+        new Screen("1366x768", 40, 22), MonitorType.LED);
+
+    // Write one line of code here to create the collection
+    ArrayList<Product> products = new ArrayList<Product>();
+
+    products.add(a1);
+    products.add(a2);
+    products.add(m1);
+    products.add(m2);
+    return products;
+  }
+
+  // Step 16
+  // Create print method here
+  private static <E> void print(ArrayList<E> productList) {
+    for (E p : productList) {
+      System.out.println(p);
+    }
+  }
+
+  public static void testProduct() {
     Widget w1 = new Widget("Widget 1");
     System.out.println(w1.toString());
     Widget w2 = new Widget("Widget 2");
     System.out.println(w2.toString());
 
-    //Displays the emuns for ItemType
-    for (ItemType it: ItemType.values()) {
-      System.out.println(it + " " + it.getcode());
+    ArrayList<Widget> widgets = new ArrayList<>();
+    widgets.add(w1);
+    widgets.add(new Widget("in add"));
+    widgets.add(new Widget("in add2"));
+
+    for (Widget w : widgets) {
+      System.out.println(w.toString());
     }
 
-    // Step 6:
-    // Create a driver class for AudioPlayer that will test to see
-    // wheater we can instantiate occurrences of it, use the media
-    // controls and print out their details to the console
-    AudioPlayer player = new AudioPlayer("Ipod Mini","MP3",ItemType.AUDIO);
-    AudioPlayer player2 = new AudioPlayer("Walkman","WAV",ItemType.AUDIO);
-    System.out.println(player);
-    System.out.println(player2);
-    player.play();
-    player.stop();
-    player.previous();
-    player.next();
-    System.out.println();
+    ArrayList<Widget> widgets2 = new ArrayList<>();
 
-    //Step 10: Create a driver class to test the screen class
-    Screen myscreen = new Screen();
-    System.out.println(myscreen);
-    System.out.println();
-
-    //Step 12: Create a driver class for movie player
-    MoviePlayer mymovie = new MoviePlayer("mymovie");
-    System.out.println(mymovie);
-    System.out.println();
-
+    for (ItemType it : ItemType.values()) {
+      System.out.println(it + " " + it.code);
+    }
   }
 
 }
+
+
+

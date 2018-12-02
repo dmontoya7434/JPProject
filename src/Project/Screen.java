@@ -9,10 +9,15 @@ package Project;
 //         with 3 fields.
 public class Screen implements ScreenSpec {
 
-  String resolution;
-  int refreshrate;
-  int responsetime;
+  private String resolution;
+  private int refreshrate;
+  private int responsetime;
 
+  public Screen (String resolution, int refreshrate, int responsetime) {
+    this.resolution = resolution;
+    this.refreshrate = refreshrate;
+    this.responsetime = responsetime;
+  }
   @Override
   public String getResolution() {
     return this.resolution;
@@ -30,8 +35,8 @@ public class Screen implements ScreenSpec {
 
   @Override
   public String toString() {
-    return "Resolution  : " + resolution + "\n"
-        + "Refresh Rate   : " + refreshrate + "\n"
-        + "Response Time  : " + responsetime;
+    return "Resolution: " + resolution + "\n"
+        + "Refresh Rate: " + refreshrate + "\n"
+        + "Response Time: " + responsetime;
   }
 }

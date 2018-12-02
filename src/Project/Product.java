@@ -8,23 +8,16 @@ import java.util.Date;
  */
 
 // abstract class called Project.Product that implements Project.Item
-public abstract class Product implements Item {
+  abstract class Product implements Item {
 
   //Fields to Project.Product
+  private String name;
   private int serialNumber;
   private String manufacturer = Item.manufacturer;
   private Date manufactureredOn;
-  private String name;
+  private static Integer currentProductNumber =1;
 
-  private static int currentProductNumber = 1; //static
 
-  //Constructor that will take the name of the product and
-  //set it to the field name variable.
-
-  /**
-   *
-   * @param name String parameter for the constructor class.
-   */
   public Product(String name) {
 
     this.name = name;
@@ -50,39 +43,26 @@ public abstract class Product implements Item {
 
   }
 
-  /**
-   *
-   * @return the name.
-   */
   public String getName() {
 
     return this.name;
 
   }
 
-  public Date getManufactureDate(Date date) {
+  public Date getManufactureDate() {
 
     return this.manufactureredOn;
   }
 
-  /**
-   *
-   * @return the serial Number.
-   */
+
   public int getSerialNumber() {
     return this.serialNumber;
   }
 
-  /**
-   *
-   * @return the tostring().
-   */
   public String toString() {
-    return "Manufacturer   :" + manufacturer + "\n"
-        + "Serial Number  :" + serialNumber + "\n"
-        + "Date           :" + manufactureredOn + "\n"
-        + "Name           :" + name + "\n";
+    return "Manufacturer:" + manufacturer + "\n"
+        + "Serial Number:" + serialNumber + "\n"
+        + "Date:" + manufactureredOn + "\n"
+        + "Name:" + name;
   }
-
-
 }

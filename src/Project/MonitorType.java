@@ -6,6 +6,13 @@ package Project;
 
 //Step 7: Create an enum called MonitorType that will store
 public enum MonitorType {
-  LCD, LED;
+  LCD("LCD"),
+  LED("LED");
+
+  public String code;
+
+  MonitorType(String code) {
+    this.code = code;
+  }
 
 }

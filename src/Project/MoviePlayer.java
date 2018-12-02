@@ -10,40 +10,42 @@ package Project;
 public class MoviePlayer extends Product implements MultimediaControl {
 
   // add 2 fields with appropriate type
-  String screen;
-  ItemType monitortype;
+  private Screen screen;
+  private MonitorType monitorType;
 
-  public MoviePlayer(String name) {
+  public MoviePlayer(String name, Screen screen, MonitorType monitorType) {
     super(name);
+    this.screen = screen;
+    this.monitorType = monitorType;
   }
 
 
   @Override
   public void play() {
-    System.out.println("Playing");
+    System.out.println("Playing movie");
   }
 
   @Override
   public void stop() {
-    System.out.println("Stopping");
+    System.out.println("Stopping movie");
 
   }
 
   @Override
   public void previous() {
-    System.out.println("Previous");
+    System.out.println("Previous movie");
 
   }
 
   @Override
   public void next() {
-    System.out.println("Next");
+    System.out.println("Next movie");
 
   }
 
   @Override
   public String toString() {
-    return "Screen      : " + screen + "\n"
-        + "Monitor type   : " + monitortype;
+    return super.toString() + "\n" + "Screen:" + screen + "\n"
+        + "Monitor type:" + monitorType;
   }
 }

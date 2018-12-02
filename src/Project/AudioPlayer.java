@@ -1,5 +1,7 @@
 package Project;
 
+import java.util.Date;
+
 /**
  * Name: Daniel Description: Enum called ItemType Date: 9/29/18 Citations: Oracal ilearning.
  */
@@ -10,8 +12,8 @@ public class AudioPlayer extends Product implements MultimediaControl {
 
   // fields
 
-  String audioSpecification;
-  ItemType mediaType;
+  private String audioSpecification;
+  private ItemType mediaType = ItemType.AUDIO;
 
   /**
    * Create a constructor that will take in 2 parameters – name and audioSpecification. The
@@ -19,12 +21,11 @@ public class AudioPlayer extends Product implements MultimediaControl {
    *
    * @param name String parameter.
    * @param audioSpecification String parameter.
-   * @param mediaType String parameter
    */
-  public AudioPlayer(String name, String audioSpecification, ItemType mediaType) {
+  public AudioPlayer(String name, String audioSpecification) {
     super(name);
     this.audioSpecification = audioSpecification;
-    this.mediaType = ItemType.AUDIO;
+    this.mediaType = mediaType;
   }
 
   //Implementation methods
@@ -54,13 +55,8 @@ public class AudioPlayer extends Product implements MultimediaControl {
 
   @Override
   public String toString() {
-    return "Audio Specification: " + this.audioSpecification + "\n"
-        + "Media Type: " + this.mediaType;
+    return super.toString() + "\n" + "Audio Spec:" + audioSpecification + "\n"
+        + "Type:" + mediaType;
   }
 
-  //  public AudioPlayer(String sudioSpecification, String name) {
-  //
-  //    this.audioSpecification = sudioSpecification;
-  //    //this.mediaType = name;
-  //  }
 }
