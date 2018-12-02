@@ -1,35 +1,20 @@
 # JPProject 
 What is the project?
-Who made it? Did you make it independently or with a team?
-When did you make it? At what level of experience and proficiency were / are you?
-Why did you make it? For fun? For an assignment? How does it relect you as a person?
-Where did you make it? What school / class?
-Note for school project: this may be the only thing someone visiting your page reads. Try to make a great impresison. Make someone want to hire you. This section will also be useful to you in the future to remind you about the project.
-
-# Demonstration
-Add an animated gif. You can use ShareX, GIPHY Capture or another tool. https://blog.github.com/2018-06-29-GIF-that-keeps-on-GIFing/ Note for school project: This is a great way for friends and family to easily see your project in action.
+They could be asked to create a production plant for any type of product ranging from a simple packaging system to a variety of electronic devices. Recently they have been asked to create a production line for multimedia devices which include music and movie players.  They wish to employee you to design a template in Java for creating and recording all future production line items.  For this particular production facility you will only implement a concrete class for music and movie players. This is a project that is put out by Oracle.
 
 # Getting Started
-Instructions to get a copy of the project up and running on someone's local machine for development and testing purposes. 
-Note for real project: You want to be able to share your project and enable collaboration. 
-Note for school project: You want a potential client or hirer to be able to run your program.
+First you will need to install Intellij IDEA, you can get it from the jetbrains website. Once installed you will need to make a github
+account to download a clone of this project or you can copy the code class by class.
 
 # Built With
-Intellij 
-JavaFX
-SceneBuilder
+Intellij IDEA Ultimate
 
 # Author
 Daniel Montoya
 
 # License
-
+MIT license 
 
 # Acknowledgments
-Web sites utilized
-Classmates who helped
-Your professor or TA if they helped
-History
-Information about what has changed.
-
-# Key Programming Concepts Utilized
+Oracle Academy
+Professor Vanselow
