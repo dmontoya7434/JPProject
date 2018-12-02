@@ -3,8 +3,10 @@ package Project;
 public class PlayerDriver {
 
   public static void testPlayer() {
-    MoviePlayer mymovie = new MoviePlayer("DBPOWER MK101",new Screen("720x480",40,22), MonitorType.LCD);
-    MoviePlayer mymovie2 = new MoviePlayer("Pyle PDV156BK", new Screen("1366x768",40,22),MonitorType.LED);
+    MoviePlayer mymovie = new MoviePlayer("DBPOWER MK101", new Screen("720x480", 40, 22),
+        MonitorType.LCD);
+    MoviePlayer mymovie2 = new MoviePlayer("Pyle PDV156BK", new Screen("1366x768", 40, 22),
+        MonitorType.LED);
     System.out.println(mymovie);
     System.out.println(mymovie2);
 

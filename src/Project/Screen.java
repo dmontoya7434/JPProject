@@ -1,8 +1,7 @@
 package Project;
 
 /**
- * Name: Daniel Description: Enum called ItemType.
- * Date: 9/29/18 Citations: Oracal ilearning.
+ * Name: Daniel Description: Enum called ItemType. Date: 9/29/18 Citations: Oracal ilearning.
  */
 
 // Step 9: Create a class called Screen that implements ScreenSpec
@@ -13,11 +12,12 @@ public class Screen implements ScreenSpec {
   private int refreshrate;
   private int responsetime;
 
-  public Screen (String resolution, int refreshrate, int responsetime) {
+  Screen(String resolution, int refreshrate, int responsetime) {
     this.resolution = resolution;
     this.refreshrate = refreshrate;
     this.responsetime = responsetime;
   }
+
   @Override
   public String getResolution() {
     return this.resolution;

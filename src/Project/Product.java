@@ -8,17 +8,17 @@ import java.util.Date;
  */
 
 // abstract class called Project.Product that implements Project.Item
-  abstract class Product implements Item {
+abstract class Product implements Item {
 
   //Fields to Project.Product
   private String name;
   private int serialNumber;
   private String manufacturer = Item.manufacturer;
   private Date manufactureredOn;
-  private static Integer currentProductNumber =1;
+  private static Integer currentProductNumber = 1;
 
 
-  public Product(String name) {
+  Product(String name) {
 
     this.name = name;
 

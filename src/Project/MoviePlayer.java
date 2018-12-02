@@ -1,8 +1,7 @@
 package Project;
 
 /**
- * Name: Daniel Description: Enum called ItemType.
- * Date: 9/29/18 Citations: Oracal ilearning.
+ * Name: Daniel Description: Enum called ItemType. Date: 9/29/18 Citations: Oracal ilearning.
  */
 
 //Step 11: Create a class called MoviePlayer that extends Product and
@@ -13,7 +12,7 @@ public class MoviePlayer extends Product implements MultimediaControl {
   private Screen screen;
   private MonitorType monitorType;
 
-  public MoviePlayer(String name, Screen screen, MonitorType monitorType) {
+  MoviePlayer(String name, Screen screen, MonitorType monitorType) {
     super(name);
     this.screen = screen;
     this.monitorType = monitorType;
