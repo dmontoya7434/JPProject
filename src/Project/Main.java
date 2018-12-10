@@ -23,10 +23,20 @@ public class Main {
     //PlayerDriver.testPlayer();
 
     //JP Project 16
-    ArrayList<Product> productsArrayList;
-    productsArrayList = testCollection();
-    Collections.sort(productsArrayList);
-    print(productsArrayList);
+   // ArrayList<Product> productsArrayList;
+    //productsArrayList = testCollection();
+    //Collections.sort(productsArrayList);
+    //print(productsArrayList);
+
+    // JP project step 18
+    //System.out.println("Test Employee Info");
+    //EmployeeInfo employee = new EmployeeInfo();
+    //System.out.println(employee.getCode());
+
+
+    //JP project step 20
+    //Main myMain = new Main();
+    //System.out.println(myMain.reverseString("Abcd12"));
   }
 
   private static ArrayList<Product> testCollection() {
@@ -79,7 +89,19 @@ public class Main {
     }
   }
 
+  // JPP Step 20
+  private  String reverseString(String id){
+    if(id.isEmpty()){
+      System.out.println("String is empty");
+      return id;
+    }
+    System.out.println("Recursive Function: "+id.substring(1));
+    return reverseString(id.substring(1))+ id.charAt(0);
+  }
+
 }
+
+
 
 
 
