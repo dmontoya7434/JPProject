@@ -34,9 +34,17 @@ public class Main {
     //System.out.println(employee.getCode());
 
 
+    //Step 19
+    System.out.println("Test Employee Department ID");
+    EmployeeInfo employeeInfo = new EmployeeInfo();
+    System.out.println(employeeInfo.toString());
+
+
     //JP project step 20
     //Main myMain = new Main();
     //System.out.println(myMain.reverseString("Abcd12"));
+
+
   }
 
   private static ArrayList<Product> testCollection() {
