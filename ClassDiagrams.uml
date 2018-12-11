@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Project</OriginalElement>
+  <nodes>
+    <node x="237.62589285714284" y="234.5">Project.Screen</node>
+    <node x="457.40267857142857" y="246.5">Project.MultimediaControl</node>
+    <node x="729.9383928571428" y="1044.0">Project.Main</node>
+    <node x="624.4026785714286" y="190.0">Project.Product</node>
+    <node x="25.313392857142844" y="246.0">Project.MonitorType</node>
+    <node x="1058.4553571428573" y="520.0">Project.EmployeeInfo</node>
+    <node x="653.6279761904761" y="0.0">Project.Item</node>
+    <node x="604.25" y="608.5">Project.AudioPlayer</node>
+    <node x="230.0" y="1228.0">Project.Project</node>
+    <node x="258.12589285714284" y="22.5">Project.ScreenSpec</node>
+    <node x="0.0" y="1228.0">Project.MoviePlayerDriver</node>
+    <node x="202.99107142857144" y="608.5">Project.MoviePlayer</node>
+    <node x="1039.5187500000002" y="212.5">Project.ItemType</node>
+    <node x="181.12589285714284" y="1088.0">Project.PlayerDriver</node>
+    <node x="525.9383928571428" y="1088.0">Project.AudioPlayerDriver</node>
+    <node x="889.4553571428572" y="686.5">Project.Widget</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Project.Main" target="Project.Screen">
+      <point x="-52.5" y="-69.5" />
+      <point x="803.4383928571428" y="944.0" />
+      <point x="569.6764880952381" y="944.0" />
+      <point x="569.6764880952381" y="450.0" />
+      <point x="397.75089285714284" y="450.0" />
+      <point x="68.625" y="70.5" />
+    </edge>
+    <edge source="Project.MoviePlayer" target="Project.Screen">
+      <point x="5.6843418860808015E-14" y="-103.5" />
+      <point x="346.9910714285715" y="500.0" />
+      <point x="352.00089285714284" y="500.0" />
+      <point x="22.875" y="70.5" />
+    </edge>
+    <edge source="Project.AudioPlayerDriver" target="Project.AudioPlayer">
+      <point x="-46.0" y="-25.5" />
+      <point x="571.9383928571428" y="1014.0" />
+      <point x="691.75" y="1014.0" />
+      <point x="-17.5" y="103.5" />
+    </edge>
+    <edge source="Project.PlayerDriver" target="Project.MonitorType">
+      <point x="-63.333333333333314" y="-25.5" />
+      <point x="193.79255952380953" y="1024.0" />
+      <point x="0.0" y="1024.0" />
+      <point x="0.0" y="500.0" />
+      <point x="47.563392857142844" y="500.0" />
+      <point x="-66.75" y="59.0" />
+    </edge>
+    <edge source="Project.AudioPlayer" target="Project.ItemType">
+      <point x="84.0" y="-103.5" />
+      <point x="793.25" y="500.0" />
+      <point x="1119.0187500000002" y="500.0" />
+      <point x="0.0" y="92.5" />
+    </edge>
+    <edge source="Project.PlayerDriver" target="Project.AudioPlayer">
+      <point x="63.333333333333314" y="-25.5" />
+      <point x="320.45922619047616" y="1004.0" />
+      <point x="656.75" y="1004.0" />
+      <point x="-52.5" y="103.5" />
+    </edge>
+    <edge source="Project.Main" target="Project.Product">
+      <point x="52.5" y="-69.5" />
+      <point x="908.4383928571428" y="994.0" />
+      <point x="1047.9553571428573" y="994.0" />
+      <point x="1047.9553571428573" y="460.0" />
+      <point x="837.9741071428571" y="460.0" />
+      <point x="98.57142857142856" y="115.0" />
+    </edge>
+    <edge source="Project.PlayerDriver" target="Project.MoviePlayer">
+      <point x="-12.666666666666686" y="-25.5" />
+      <point x="244.45922619047616" y="1024.0" />
+      <point x="238.99107142857144" y="1024.0" />
+      <point x="-108.0" y="103.5" />
+    </edge>
+    <edge source="Project.MoviePlayer" target="Project.Product">
+      <point x="82.28571428571433" y="-103.5" />
+      <point x="429.2767857142858" y="470.0" />
+      <point x="640.83125" y="470.0" />
+      <point x="-98.57142857142856" y="115.0" />
+    </edge>
+    <edge source="Project.Main" target="Project.EmployeeInfo">
+      <point x="94.5" y="-69.5" />
+      <point x="950.4383928571428" y="1014.0" />
+      <point x="1268.4553571428573" y="1014.0" />
+      <point x="70.0" y="192.0" />
+    </edge>
+    <edge source="Project.PlayerDriver" target="Project.Screen">
+      <point x="-38.0" y="-25.5" />
+      <point x="219.12589285714284" y="1014.0" />
+      <point x="192.49107142857144" y="1014.0" />
+      <point x="192.49107142857144" y="500.0" />
+      <point x="260.50089285714284" y="500.0" />
+      <point x="-68.625" y="70.5" />
+    </edge>
+    <edge source="Project.Product" target="Project.Item">
+      <point x="57.5" y="-115.0" />
+      <point x="796.9026785714286" y="165.0" />
+      <point x="783.3779761904761" y="165.0" />
+      <point x="43.25" y="70.0" />
+    </edge>
+    <edge source="Project.Main" target="Project.MonitorType">
+      <point x="-115.5" y="-69.5" />
+      <point x="740.4383928571428" y="974.0" />
+      <point x="78.53869047619048" y="974.0" />
+      <point x="78.53869047619048" y="500.0" />
+      <point x="92.06339285714284" y="500.0" />
+      <point x="-22.25" y="59.0" />
+    </edge>
+    <edge source="Project.MoviePlayer" target="Project.MonitorType">
+      <point x="-123.42857142857139" y="-103.5" />
+      <point x="223.56250000000006" y="490.0" />
+      <point x="136.56339285714284" y="490.0" />
+      <point x="22.25" y="59.0" />
+    </edge>
+    <edge source="Project.Main" target="Project.AudioPlayer">
+      <point x="-31.5" y="-69.5" />
+      <point x="824.4383928571428" y="934.0" />
+      <point x="761.75" y="934.0" />
+      <point x="52.5" y="103.5" />
+    </edge>
+    <edge source="Project.AudioPlayer" target="Project.Product">
+      <point x="-42.0" y="-103.5" />
+      <point x="667.25" y="490.0" />
+      <point x="706.5455357142857" y="490.0" />
+      <point x="-32.85714285714289" y="115.0" />
+    </edge>
+    <edge source="Project.AudioPlayer" target="Project.MultimediaControl">
+      <point x="-84.0" y="-103.5" />
+      <point x="625.25" y="440.0" />
+      <point x="567.6526785714286" y="440.0" />
+      <point x="36.75" y="58.5" />
+    </edge>
+    <edge source="Project.MoviePlayer" target="Project.MultimediaControl">
+      <point x="41.142857142857224" y="-103.5" />
+      <point x="388.13392857142867" y="460.0" />
+      <point x="494.15267857142857" y="460.0" />
+      <point x="-36.75" y="58.5" />
+    </edge>
+    <edge source="Project.Main" target="Project.MoviePlayer">
+      <point x="-73.5" y="-69.5" />
+      <point x="782.4383928571428" y="954.0" />
+      <point x="454.99107142857144" y="954.0" />
+      <point x="108.0" y="103.5" />
+    </edge>
+    <edge source="Project.Screen" target="Project.ScreenSpec">
+      <point x="0.0" y="-70.5" />
+      <point x="0.0" y="47.5" />
+    </edge>
+    <edge source="Project.Widget" target="Project.Product">
+      <point x="-37.0" y="-25.5" />
+      <point x="926.4553571428572" y="480.0" />
+      <point x="772.2598214285715" y="480.0" />
+      <point x="32.85714285714289" y="115.0" />
+    </edge>
+    <edge source="Project.Main" target="Project.Widget">
+      <point x="10.5" y="-69.5" />
+      <point x="866.4383928571428" y="974.0" />
+      <point x="926.4553571428572" y="974.0" />
+      <point x="-37.0" y="25.5" />
+    </edge>
+    <edge source="Project.Main" target="Project.ItemType">
+      <point x="115.5" y="-69.5" />
+      <point x="971.4383928571428" y="1024.0" />
+      <point x="1348.9553571428573" y="1024.0" />
+      <point x="1348.9553571428573" y="500.0" />
+      <point x="1172.0187500000002" y="500.0" />
+      <point x="53.0" y="92.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.4145669291338583" x="609.6369208793451" y="449.80626780626767" />
+  <SelectedNodes>
+    <node>Project.ScreenSpec</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>Project Files</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
