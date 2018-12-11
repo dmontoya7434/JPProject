@@ -8,6 +8,8 @@ You will need to have Intellij IDEA installed on your computer to run this code.
 # Built With
 Intellij IDEA Ultimate
 
+# Class Diagram
+![Project Class Diagram](diagrams/ClassDiagram.uml)
 # Author
 Daniel Montoya
 
